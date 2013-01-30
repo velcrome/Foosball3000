@@ -2,12 +2,12 @@
    <PATCH nodename="C:\dev\vvvv\Foosball3000\Setup.v4p" systemname="Setup" filename="C:\dev\vvvv\Laserkick3000\Setup.v4p" locked="0">
    <BOUNDS type="Window" left="0" top="0" width="20715" height="15150">
    </BOUNDS>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="0">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
    <BOUNDS type="Node" left="2517" top="18546" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="2517" top="18546" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="35400" top="885" width="7635" height="15480">
+   <BOUNDS type="Window" left="17640" top="210" width="10620" height="6435">
    </BOUNDS>
    <PIN pinname="Actual Backbuffer Width" visible="1">
    </PIN>
@@ -49,6 +49,8 @@
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
+   <PIN pinname="Alignment" slicecount="1" values="FitWidth">
+   </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="0" dstpinname="Aspect Ratio">
    </LINK>
@@ -71,7 +73,7 @@
    </PIN>
    <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="1" visible="1">
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="7">
@@ -85,7 +87,9 @@
    </PIN>
    <PIN pinname="Inital Distance" slicecount="1" values="1.47">
    </PIN>
-   <PIN pinname="Distortion" visible="1">
+   <PIN pinname="Distortion" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Initial Yaw" slicecount="1" values="0.25">
    </PIN>
    </NODE>
    <LINK srcnodeid="7" srcpinname="View" dstnodeid="0" dstpinname="View">
@@ -813,7 +817,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="13947" top="9996" width="930" height="1020">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -823,7 +827,7 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="26">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="124" srcpinname="Y Output Value" dstnodeid="120" dstpinname="Index" hiddenwhenlocked="1">
@@ -1117,27 +1121,25 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="154" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Fullscreen">
    </LINK>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="155">
-   <BOUNDS type="Node" left="7512" top="17652" width="100" height="100">
+   <BOUNDS type="Node" left="4308" top="17508" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    <PIN pinname="Z" slicecount="1" values="-0.25">
    </PIN>
    </NODE>
-   <LINK srcnodeid="155" srcpinname="Transform Out" dstnodeid="7" dstpinname="Distortion">
-   </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="156">
-   <BOUNDS type="Node" left="10260" top="14268" width="100" height="100">
+   <BOUNDS type="Node" left="10104" top="14352" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="10260" top="14268" width="480" height="480">
+   <BOUNDS type="Box" left="10104" top="14352" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
@@ -1145,14 +1147,62 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="156" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Enabled">
    </LINK>
-   <NODE systemname="Team" filename="modules\skins\velcrome\Team.v4p" nodename="modules\skins\velcrome\Team.v4p" componentmode="InAWindow" id="61">
+   <NODE systemname="Team" filename="modules\skins\Template\Team.v4p" nodename="modules\skins\Template\Team.v4p" componentmode="Hidden" id="64">
+   <BOUNDS type="Node" left="7572" top="13236" width="1335" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7572" top="13236" width="9640" height="5260">
+   </BOUNDS>
+   <BOUNDS type="Window" left="2820" top="3510" width="14895" height="5265">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="PlayerLayer" visible="1">
+   </PIN>
+   <PIN pinname="Transform In 1" visible="1">
+   </PIN>
+   <PIN pinname="AxisLayer" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="ID" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Light Position XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Output 2" dstnodeid="64" dstpinname="Transform In 1">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Color Output" dstnodeid="64" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="67" srcpinname="Output 2" dstnodeid="64" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="AxisLayer" dstnodeid="2" dstpinname="Layer 5">
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="PlayerLayer" dstnodeid="2" dstpinname="Layer 6" linkstyle="Bezier">
+   <LINKPOINT x="8262" y="14279">
+   </LINKPOINT>
+   <LINKPOINT x="8877" y="14279">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="64" srcpinname="ID" dstnodeid="85" dstpinname="Node ID" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="8907" y="14264">
+   </LINKPOINT>
+   <LINKPOINT x="15702" y="14264">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="141" srcpinname="BallPosition" dstnodeid="64" dstpinname="Light Position XYZ" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="2982" y="12629">
+   </LINKPOINT>
+   <LINKPOINT x="8427" y="12629">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Team" filename="modules\skins\Template\Team.v4p" nodename="modules\skins\Template\Team.v4p" componentmode="Hidden" id="61">
    <BOUNDS type="Node" left="5052" top="13236" width="1320" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="5052" top="13236" width="9640" height="5260">
@@ -1202,7 +1252,7 @@
    <LINKPOINT x="5892" y="12629">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Ball" filename="modules\skins\velcrome\Ball.v4p" componentmode="Hidden" id="77" nodename="modules\skins\velcrome\Ball.v4p">
+   <NODE systemname="Ball" filename="modules\skins\Template\Ball.v4p" componentmode="Hidden" id="77" nodename="modules\skins\Template\Ball.v4p">
    <BOUNDS type="Node" left="2922" top="13236" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="2922" top="13236" width="4800" height="3600">
@@ -1230,7 +1280,7 @@
    </LINK>
    <LINK srcnodeid="141" srcpinname="BallPosition" dstnodeid="77" dstpinname="Position" hiddenwhenlocked="1">
    </LINK>
-   <NODE systemname="Field" filename="modules\skins\velcrome\Field.v4p" nodename="modules\skins\velcrome\Field.v4p" componentmode="InAWindow" id="135">
+   <NODE systemname="Field" filename="modules\skins\Template\Field.v4p" nodename="modules\skins\Template\Field.v4p" componentmode="InAWindow" id="135">
    <BOUNDS type="Node" left="1182" top="13236" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="1182" top="13236" width="3565" height="4690">
@@ -1255,53 +1305,5 @@
    <LINK srcnodeid="115" srcpinname="Transform Out" dstnodeid="135" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="135" srcpinname="Layer" dstnodeid="2" dstpinname="Layer 1">
-   </LINK>
-   <NODE systemname="Team" filename="modules\skins\Template\Team.v4p" nodename="modules\skins\Template\Team.v4p" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="7572" top="13236" width="1335" height="270">
-   </BOUNDS>
-   <BOUNDS type="Box" left="7572" top="13236" width="9640" height="5260">
-   </BOUNDS>
-   <BOUNDS type="Window" left="2820" top="3510" width="14895" height="5265">
-   </BOUNDS>
-   <PIN pinname="Layer 1" visible="1">
-   </PIN>
-   <PIN pinname="PlayerLayer" visible="1">
-   </PIN>
-   <PIN pinname="Transform In 1" visible="1">
-   </PIN>
-   <PIN pinname="AxisLayer" visible="1">
-   </PIN>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="ID" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Light Position XYZ" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="66" srcpinname="Output 2" dstnodeid="64" dstpinname="Transform In 1">
-   </LINK>
-   <LINK srcnodeid="68" srcpinname="Color Output" dstnodeid="64" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="67" srcpinname="Output 2" dstnodeid="64" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="64" srcpinname="AxisLayer" dstnodeid="2" dstpinname="Layer 5">
-   </LINK>
-   <LINK srcnodeid="64" srcpinname="PlayerLayer" dstnodeid="2" dstpinname="Layer 6" linkstyle="Bezier">
-   <LINKPOINT x="8262" y="14279">
-   </LINKPOINT>
-   <LINKPOINT x="8877" y="14279">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="64" srcpinname="ID" dstnodeid="85" dstpinname="Node ID" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="8907" y="14264">
-   </LINKPOINT>
-   <LINKPOINT x="15702" y="14264">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="141" srcpinname="BallPosition" dstnodeid="64" dstpinname="Light Position XYZ" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="2982" y="12629">
-   </LINKPOINT>
-   <LINKPOINT x="8427" y="12629">
-   </LINKPOINT>
    </LINK>
    </PATCH>
