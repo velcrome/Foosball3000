@@ -1,0 +1,81 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
+   <PATCH nodename="C:\dev\vvvv\Foosball3000\modules\skins\Template\Field.v4p" systemname="Field" filename="C:\dev\vvvv\Laserkick3000\modules\skins\Template\Field.v4p">
+   <BOUNDS type="Window" left="4230" top="3465" width="15075" height="9375">
+   </BOUNDS>
+   <NODE systemname="Constant (EX9.Effect)" nodename="Constant (EX9.Effect)" componentmode="Hidden" id="0" filename="%VVVV%\lib\nodes\effects\Constant.fx">
+   <BOUNDS type="Node" left="1800" top="3090" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Render State" visible="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|0.00000,0.27621,0.20722,0.99180|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Grid (EX9.Geometry)" nodename="Grid (EX9.Geometry)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1965" top="1920" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mesh" visible="1">
+   </PIN>
+   <PIN pinname="Resolution Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="1965" top="1500" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1965" top="1500" width="345" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1500" top="1920" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Fill Mode" slicecount="1" values="Solid">
+   </PIN>
+   <PIN pinname="Render State Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Render State Out" dstnodeid="0" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Mesh" dstnodeid="0" dstpinname="Mesh">
+   </LINK>
+   <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Transform">
+   </PIN>
+   <BOUNDS type="Box" left="1800" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1800" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="0" dstpinname="Transform">
+   </LINK>
+   <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Layer">
+   </PIN>
+   <BOUNDS type="Box" left="1800" top="3690" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1800" top="3690" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Resolution X">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Resolution Y">
+   </LINK>
+   </PATCH>
