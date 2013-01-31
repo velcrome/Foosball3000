@@ -89,7 +89,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8070" top="2070" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="131">
+   <PIN pinname="Y Input Value" slicecount="1" values="400">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -131,9 +131,15 @@
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Render State" visible="1">
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Ambient Color" slicecount="1" visible="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Diffuse Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Specular Color" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Light Position XYZ">
@@ -168,8 +174,6 @@
    <PIN pinname="Render State In" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="24" srcpinname="Render State Out" dstnodeid="13" dstpinname="Render State">
-   </LINK>
    <NODE systemname="ZWriteEnable (EX9.RenderState)" nodename="ZWriteEnable (EX9.RenderState)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="615" top="4185" width="100" height="100">
    </BOUNDS>
@@ -285,6 +289,8 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
+   <PIN pinname="Color In" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="32" dstpinname="XYZ In">
    </LINK>
@@ -357,7 +363,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="4464" top="4920" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -367,9 +373,27 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="40" systemname="IOBox (Color)">
+   <BOUNDS type="Node" left="3216" top="6336" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3216" top="6336" width="2256" height="480">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|0.00000,0.95367,0.29303,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Color Output" dstnodeid="13" dstpinname="Diffuse Color">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Color Output" dstnodeid="13" dstpinname="Specular Color">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Color Output" dstnodeid="13" dstpinname="Ambient Color">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Color Output" dstnodeid="32" dstpinname="Color In">
    </LINK>
    </PATCH>
