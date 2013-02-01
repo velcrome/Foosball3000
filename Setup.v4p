@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
    <PATCH nodename="c:\dev\vvvv\Foosball3000\Setup.v4p" systemname="Setup" filename="C:\dev\vvvv\Laserkick3000\Setup.v4p" locked="0">
-   <BOUNDS type="Window" left="10095" top="705" width="16365" height="13770">
+   <BOUNDS type="Window" left="11460" top="1710" width="16365" height="13770">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="0">
    <BOUNDS type="Node" left="2505" top="20682" width="2352" height="264">
@@ -39,7 +39,7 @@
    </PIN>
    <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
    </PIN>
-   <PIN pinname="Presentation Interval" slicecount="1" values="immediately">
+   <PIN pinname="Presentation Interval" slicecount="1" values="default">
    </PIN>
    <PIN pinname="Clear" visible="1" slicecount="1" values="0">
    </PIN>
@@ -991,7 +991,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3932" top="16476" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10095" top="705" width="16365" height="13770">
+   <BOUNDS type="Window" left="11460" top="1710" width="16365" height="13770">
    </BOUNDS>
    <PIN pinname="IRTexture" visible="1">
    </PIN>
@@ -1221,7 +1221,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2922" top="13308" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="10095" top="705" width="16365" height="13770">
+   <BOUNDS type="Window" left="11460" top="1710" width="16365" height="13770">
    </BOUNDS>
    <PIN pinname="Position" visible="1">
    </PIN>
