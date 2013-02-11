@@ -213,7 +213,7 @@
    <LINK srcnodeid="21" srcpinname="Mesh" dstnodeid="13" dstpinname="Mesh">
    </LINK>
    <NODE systemname="Translate (Transform Vector)" nodename="Translate (Transform Vector)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="3567" top="2352" width="100" height="100">
+   <BOUNDS type="Node" left="2937" top="2187" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XYZ" visible="1" slicecount="6" values="0,0,0">
    </PIN>
@@ -229,7 +229,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Scale (Transform)" nodename="Scale (Transform)" componentmode="Hidden" id="16">
-   <BOUNDS type="Node" left="3162" top="3918" width="100" height="100">
+   <BOUNDS type="Node" left="2532" top="3753" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -247,9 +247,9 @@
    <LINK srcnodeid="17" srcpinname="Transform Out" dstnodeid="16" dstpinname="Transform In">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="3636" top="3144" width="0" height="0">
+   <BOUNDS type="Node" left="3006" top="2979" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3636" top="3144" width="792" height="240">
+   <BOUNDS type="Box" left="3006" top="2979" width="792" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.09">
    </PIN>
