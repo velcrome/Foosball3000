@@ -6,16 +6,6 @@
    <PIN pinname="Texture" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Threshold (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Threshold\Threshold (EX9.Texture Filter).v4p" nodename="Threshold (EX9.Texture Filter)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1125" top="990" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="1425" top="8130" width="100" height="100">
    </BOUNDS>
@@ -101,7 +91,7 @@
    </PIN>
    <PIN pinname="Spread Count" slicecount="1" values="8">
    </PIN>
-   <PIN pinname="Width" slicecount="1" values="1.97">
+   <PIN pinname="Width" slicecount="1" values="1.96">
    </PIN>
    <PIN pinname="Input" slicecount="1" values="-0.052">
    </PIN>
@@ -369,5 +359,15 @@
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="5" dstpinname="Texture">
    </LINK>
    <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 1">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="27" systemname="IOBox (Color)">
+   <BOUNDS type="Node" left="7230" top="6375" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7230" top="6375" width="2250" height="480">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|0.00000,1.00000,0.08857,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Color Output" dstnodeid="4" dstpinname="Color">
    </LINK>
    </PATCH>

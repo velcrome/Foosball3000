@@ -1393,7 +1393,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="8" visible="1" values="-0.438,0.228,0.421,0.266,0.427,-0.217,-0.399,-0.256">
+   <PIN pinname="Y Input Value" slicecount="8" visible="1" values="-0.38,0.228,0.5,0.22,0.47,-0.45,-0.38,-0.39">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
