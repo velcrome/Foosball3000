@@ -644,8 +644,6 @@
    <PIN pinname="Sampler State" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="176" srcpinname="Layer" dstnodeid="34" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="177">
    <BOUNDS type="Node" left="1598" top="11388" width="100" height="100">
    </BOUNDS>
@@ -1381,5 +1379,27 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="251" srcpinname="Sampler State Out" dstnodeid="176" dstpinname="Sampler State">
+   </LINK>
+   <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="252">
+   <BOUNDS type="Node" left="3600" top="12795" width="2160" height="276">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Sampler State" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="232" srcpinname="Texture Out" dstnodeid="252" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="177" srcpinname="Transform Out" dstnodeid="252" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="252" srcpinname="Layer" dstnodeid="34" dstpinname="Input Node">
    </LINK>
    </PATCH>

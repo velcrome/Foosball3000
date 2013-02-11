@@ -7,7 +7,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Threshold (EX9.Texture Filter)" filename="%VVVV%\addonpack\lib\nodes\modules\TextureFX\Filter\Threshold\Threshold (EX9.Texture Filter).v4p" nodename="Threshold (EX9.Texture Filter)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="1365" top="1125" width="100" height="100">
+   <BOUNDS type="Node" left="1125" top="990" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -39,7 +39,7 @@
    </BOUNDS>
    <PIN pinname="Layer 2" visible="1">
    </PIN>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Template Count" slicecount="1" values="3">
    </PIN>
@@ -49,7 +49,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="4">
-   <BOUNDS type="Node" left="4920" top="5025" width="100" height="100">
+   <BOUNDS type="Node" left="6330" top="6090" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -61,7 +61,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="900" top="6105" width="100" height="100">
+   <BOUNDS type="Node" left="1395" top="5865" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -73,7 +73,7 @@
    </PIN>
    </NODE>
    <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="6">
-   <BOUNDS type="Node" left="135" top="5490" width="100" height="100">
+   <BOUNDS type="Node" left="1575" top="5355" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XYZ" slicecount="1" values="2">
    </PIN>
@@ -81,7 +81,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="7">
-   <BOUNDS type="Node" left="5175" top="4200" width="100" height="100">
+   <BOUNDS type="Node" left="6585" top="5265" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -95,7 +95,7 @@
    </PIN>
    </NODE>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="5250" top="3480" width="100" height="100">
+   <BOUNDS type="Node" left="6660" top="4545" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -125,15 +125,13 @@
    <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Input">
    </PIN>
-   <BOUNDS type="Box" left="900" top="155" width="750" height="240">
+   <BOUNDS type="Box" left="720" top="275" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="900" top="155" width="750" height="240">
+   <BOUNDS type="Node" left="720" top="275" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Output Node" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="3" srcpinname="Layer" dstnodeid="2" dstpinname="Layers">
@@ -335,9 +333,9 @@
    <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Screen Space Points XY">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6510" top="4200" width="0" height="0">
+   <BOUNDS type="Node" left="7860" top="5640" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6510" top="4200" width="480" height="480">
+   <BOUNDS type="Box" left="7860" top="5640" width="480" height="480">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
@@ -355,9 +353,9 @@
    <LINK srcnodeid="25" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Enabled">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6795" top="3165" width="0" height="0">
+   <BOUNDS type="Node" left="8205" top="4230" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="6795" top="3165" width="795" height="240">
+   <BOUNDS type="Box" left="8205" top="4230" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.03">
    </PIN>
@@ -369,7 +367,7 @@
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="7" dstpinname="ScaleX">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Output Node" dstnodeid="5" dstpinname="Texture">
-   <LINKPOINT x="1275" y="6135">
-   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 1">
    </LINK>
    </PATCH>
