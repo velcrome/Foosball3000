@@ -100,4 +100,14 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Transform Out" dstnodeid="6" dstpinname="Transform">
    </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="11" systemname="IOBox (Color)">
+   <BOUNDS type="Node" left="3495" top="2670" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3495" top="2670" width="2250" height="480">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" values="|0.24191,0.24191,0.24191,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Color Output" dstnodeid="6" dstpinname="Color">
+   </LINK>
    </PATCH>

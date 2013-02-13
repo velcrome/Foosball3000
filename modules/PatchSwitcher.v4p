@@ -185,7 +185,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="6645" top="1500" width="915" height="1005">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -195,7 +195,7 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="26">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
@@ -203,7 +203,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3660" top="1500" width="930" height="1020">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -213,7 +213,7 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="26">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="AllTeams" filename="AllTeams.v4p" nodename="modules\AllTeams.v4p" componentmode="Hidden" id="16" hiddenwhenlocked="1">
@@ -233,7 +233,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2835" top="1620" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" encoded="0" values="modules\skins">
+   <PIN pinname="Input String" slicecount="1" encoded="0" values="skins">
    </PIN>
    <PIN pinname="Default" slicecount="1" encoded="0" values="||">
    </PIN>
