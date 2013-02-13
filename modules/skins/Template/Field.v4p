@@ -36,14 +36,6 @@
    <PIN pinname="Render State Out" visible="1">
    </PIN>
    </NODE>
-   <NODE id="4" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Transform">
-   </PIN>
-   <BOUNDS type="Box" left="1860" top="2030" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1860" top="2030" width="750" height="240">
-   </BOUNDS>
-   </NODE>
    <NODE id="5" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Layer">
    </PIN>
@@ -61,13 +53,51 @@
    <NODE systemname="Constant (EX9.Effect)" nodename="Constant (EX9.Effect)" componentmode="Hidden" id="6" filename="%VVVV%\lib\nodes\effects\Constant.fx">
    <BOUNDS type="Node" left="1860" top="4620" width="100" height="100">
    </BOUNDS>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Render State Out" dstnodeid="6" dstpinname="Render State">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Mesh" dstnodeid="6" dstpinname="Mesh">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="6" dstpinname="Transform">
-   </LINK>
    <LINK srcnodeid="6" srcpinname="Layer" dstnodeid="5" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Scale (Transform Vector)" nodename="Scale (Transform Vector)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="2175" top="1515" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XYZ" visible="1" slicecount="3" values="1,1,1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Transform In" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Rotate (Transform)" nodename="Rotate (Transform)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="2175" top="2025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="0.25">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Transform Out" dstnodeid="8" dstpinname="Transform In">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="2595" top="1020" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="FieldDimenstions">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="FieldDimenstions">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Input Value" dstnodeid="9" dstpinname="XYZ">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Transform Out" dstnodeid="6" dstpinname="Transform">
    </LINK>
    </PATCH>

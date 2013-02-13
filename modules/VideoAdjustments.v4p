@@ -13,7 +13,7 @@
    </PIN>
    <PIN pinname="EX9 Out" visible="1">
    </PIN>
-   <PIN pinname="Presentation Interval" slicecount="1" values="|wait for frame|">
+   <PIN pinname="Presentation Interval" slicecount="1" values="default">
    </PIN>
    <PIN pinname="Projection" visible="1" slicecount="1" values="||">
    </PIN>
