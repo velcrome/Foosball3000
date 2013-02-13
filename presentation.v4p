@@ -1,0 +1,125 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
+   <PATCH nodename="C:\vvvv\Foosball3000\presentation.v4p" systemname="presentation" filename="C:\vvvv\Foosball3000\presentation.v4p">
+   <BOUNDS type="Window" left="10680" top="660" width="9735" height="12330">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="1983" top="618" width="495" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1983" top="618" width="5025" height="8355">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|- wer wir sind&cr;&lf;&cr;&lf;- progress&cr;&lf;&cr;&lf;- die idee&cr;&lf;- idee --&gt; workshop --&gt; no presentation&cr;&lf;- participants explain themselves&cr;&lf;&cr;&lf;&cr;&lf;- ir-general&cr;&lf;- ir-kicker&cr;&lf;- patch&cr;&lf;&cr;&lf;- tracking software in general&cr;&lf;- tracking kicker&cr;&lf;- patch&cr;&lf;&cr;&lf;- complex patches&cr;&lf;- complex kicker?&cr;&lf;- patch&cr;&lf;- all thats important: ballposition and field dimensions (in meters)&cr;&lf;&tab;&tab;&tab;&tab;&tab;&tab;&cr;&lf;&cr;&lf;- group discussion&cr;&lf;&tab;- possibilities ?&cr;&lf;&tab;- known things/installations/designs&cr;&lf;&tab;- is it doable? (in 4 hours)&cr;&lf;&cr;&lf;&cr;&lf;- team building&cr;&lf;&cr;&lf;&tab;- PATCHING -&cr;&lf;&cr;&lf;- showcase&cr;&lf;&cr;&lf;&cr;&lf;- week in berlin, lost in infrared&cr;&lf;- |">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="570" top="606" width="810" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="570" top="606" width="960" height="300">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="start">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="11">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="483" top="2511" width="615" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="483" top="2511" width="1110" height="315">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="theory">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="11">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="375" top="5451" width="615" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="375" top="5451" width="1215" height="330">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="practical">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="11">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="300" top="8193" width="615" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="300" top="8193" width="1365" height="570">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|additional stories|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="11">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)" exposed="0">
+   <BOUNDS type="Node" left="1605" top="4209" width="600" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1605" top="4209" width="285" height="795">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="m">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)" exposed="0">
+   <BOUNDS type="Node" left="1611" top="3351" width="600" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1611" top="3351" width="285" height="630">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)" exposed="0">
+   <BOUNDS type="Node" left="1605" top="2541" width="600" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1605" top="2541" width="285" height="660">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="m">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>
