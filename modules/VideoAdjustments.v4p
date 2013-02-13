@@ -89,7 +89,7 @@
    </PIN>
    <PIN pinname="Height" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Format" visible="-1" pintype="Input" slicecount="1" values="|No Specific|">
+   <PIN pinname="Format" visible="0" pintype="Input" slicecount="1" values="|No Specific|">
    </PIN>
    </NODE>
    <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
@@ -132,7 +132,7 @@
    </LINK>
    <LINK srcnodeid="8" srcpinname="Output" dstnodeid="7" dstpinname="TranslateX">
    </LINK>
-   <BOUNDS type="Window" left="13500" top="960" width="13350" height="13260">
+   <BOUNDS type="Window" left="17130" top="1020" width="13350" height="13260">
    </BOUNDS>
    <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Width">
    </LINK>
@@ -315,5 +315,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="68" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="69" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="4485" top="7350" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4485" top="7350" width="1590" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="A32B32G32R32F">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Output Enum" dstnodeid="9" dstpinname="Format">
    </LINK>
    </PATCH>
