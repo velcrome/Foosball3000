@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
    <PATCH nodename="C:\vvvv\Foosball3000\Setup.v4p" systemname="Setup" filename="C:\dev\vvvv\Laserkick3000\Setup.v4p" locked="0">
    <BOUNDS type="Window" left="12840" top="0" width="15960" height="15450">
    </BOUNDS>
@@ -484,7 +484,7 @@
    </NODE>
    <LINK srcnodeid="240" srcpinname="Y Output Value" dstnodeid="239" dstpinname="Switch">
    </LINK>
-   <NODE systemname="IRCamera (DShow)" filename="modules\IRCamera (DShow).v4p" nodename="modules\IRCamera (DShow).v4p" componentmode="InAWindow" id="242">
+   <NODE systemname="IRCamera (DShow)" filename="modules\IRCamera (DShow).v4p" nodename="modules\IRCamera (DShow).v4p" componentmode="Hidden" id="242">
    <BOUNDS type="Node" left="6315" top="5385" width="4905" height="270">
    </BOUNDS>
    <PIN pinname="xy" visible="1">
@@ -521,7 +521,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8715" top="2385" width="1470" height="495">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.38">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.4">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -739,7 +739,7 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="26">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Minimum" slicecount="1" values="0">
    </PIN>
@@ -908,23 +908,7 @@
    </NODE>
    <LINK srcnodeid="271" srcpinname="Y Output Value" dstnodeid="270" dstpinname="DoWrite">
    </LINK>
-   <NODE systemname="Ball" filename="modules\skins\Template\Ball.v4p" nodename="modules\skins\Template\Ball.v4p" componentmode="Hidden" id="269">
-   <BOUNDS type="Node" left="5430" top="7650" width="975" height="270">
-   </BOUNDS>
-   <PIN pinname="Window Handle" visible="-1" pintype="Output">
-   </PIN>
-   <PIN pinname="ID" visible="1" pintype="Output">
-   </PIN>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Position" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="269" srcpinname="ID" dstnodeid="268" dstpinname="Node ID">
-   </LINK>
-   <LINK srcnodeid="269" srcpinname="Layer" dstnodeid="145" dstpinname="Layer 3">
-   </LINK>
-   <LINK srcnodeid="239" srcpinname="Output" dstnodeid="269" dstpinname="Position">
+   <LINK srcnodeid="259" srcpinname="OnChange" dstnodeid="258" dstpinname="Create Node">
    </LINK>
    <NODE systemname="Field" filename="modules\skins\Template\Field.v4p" nodename="modules\skins\Template\Field.v4p" componentmode="Hidden" id="135">
    <BOUNDS type="Node" left="3087" top="6711" width="0" height="0">
@@ -946,6 +930,22 @@
    </LINK>
    <LINK srcnodeid="135" srcpinname="Layer" dstnodeid="145" dstpinname="Layer 2">
    </LINK>
-   <LINK srcnodeid="259" srcpinname="OnChange" dstnodeid="258" dstpinname="Create Node">
+   <NODE systemname="Ball" filename="modules\skins\Template\Ball.v4p" nodename="modules\skins\Template\Ball.v4p" componentmode="Hidden" id="269">
+   <BOUNDS type="Node" left="5430" top="7650" width="975" height="270">
+   </BOUNDS>
+   <PIN pinname="Window Handle" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Position" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="269" srcpinname="ID" dstnodeid="268" dstpinname="Node ID">
+   </LINK>
+   <LINK srcnodeid="269" srcpinname="Layer" dstnodeid="145" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="239" srcpinname="Output" dstnodeid="269" dstpinname="Position">
    </LINK>
    </PATCH>
