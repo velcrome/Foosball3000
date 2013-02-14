@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
    <PATCH nodename="C:\vvvv\Foosball3000\Setup.v4p" systemname="Setup" filename="C:\dev\vvvv\Laserkick3000\Setup.v4p" locked="0">
-   <BOUNDS type="Window" left="12840" top="0" width="15960" height="15450">
+   <BOUNDS type="Window" left="5940" top="750" width="12090" height="7740">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="FullScreen" id="0">
-   <BOUNDS type="Node" left="675" top="13647" width="2352" height="264">
+   <BOUNDS type="Node" left="675" top="13650" width="2352" height="264">
    </BOUNDS>
-   <BOUNDS type="Box" left="675" top="13647" width="2400" height="1800">
+   <BOUNDS type="Box" left="675" top="13650" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="38145" top="3030" width="10620" height="6435">
    </BOUNDS>
@@ -42,6 +42,8 @@
    <PIN pinname="Presentation Interval" slicecount="1" values="default">
    </PIN>
    <PIN pinname="Clear" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Projector">
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="1">
@@ -295,7 +297,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="8" visible="1" values="-0.404,0.228,0.497,0.223,0.5,-0.277,-0.401,-0.279">
+   <PIN pinname="Y Input Value" slicecount="8" visible="1" values="-0.408,0.262,0.485,0.246,0.487,-0.303,-0.411,-0.306">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -380,12 +382,12 @@
    </NODE>
    <LINK srcnodeid="215" srcpinname="frames per second" dstnodeid="216" dstpinname="Y Input Value">
    </LINK>
-   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="217">
+   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="Hidden" id="217">
    <BOUNDS type="Node" left="180" top="4245" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="180" top="4245" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="150" top="9240" width="12690" height="6510">
+   <BOUNDS type="Window" left="1410" top="4365" width="12690" height="6510">
    </BOUNDS>
    <PIN pinname="Background Color" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
    </PIN>
@@ -493,7 +495,7 @@
    </PIN>
    <PIN pinname="Screen Space Points XY" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="15420" top="0" width="16035" height="15450">
+   <BOUNDS type="Window" left="420" top="2055" width="16035" height="12180">
    </BOUNDS>
    </NODE>
    <NODE componentmode="InABox" id="243" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
@@ -505,7 +507,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="8" values="-0.447,0.333,0.49,0.337,0.473,-0.336,-0.427,-0.354">
+   <PIN pinname="Y Input Value" visible="1" slicecount="8" values="-0.461,0.334,0.483,0.343,0.464,-0.342,-0.433,-0.358">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -729,7 +731,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="10590" top="5940" width="930" height="1020">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -910,12 +912,66 @@
    </LINK>
    <LINK srcnodeid="259" srcpinname="OnChange" dstnodeid="258" dstpinname="Create Node">
    </LINK>
-   <NODE systemname="Field" filename="modules\skins\Template\Field.v4p" nodename="modules\skins\Template\Field.v4p" componentmode="Hidden" id="135">
+   <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="274">
+   <BOUNDS type="Node" left="7860" top="13065" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Inital Distance" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Initial Pitch" slicecount="1" values="0.25">
+   </PIN>
+   <PIN pinname="Initial Yaw" slicecount="1" values="0.25">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="275" stayontop="1">
+   <BOUNDS type="Node" left="6840" top="13770" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6840" top="13770" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7260" top="9660" width="2280" height="5010">
+   </BOUNDS>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" visible="1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="274" srcpinname="View" dstnodeid="275" dstpinname="View">
+   </LINK>
+   <LINK srcnodeid="274" srcpinname="Projection" dstnodeid="275" dstpinname="Projection">
+   </LINK>
+   <LINK srcnodeid="145" srcpinname="Layer" dstnodeid="275" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="276">
+   <BOUNDS type="Node" left="7695" top="14250" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Height" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="275" srcpinname="Actual Backbuffer Width" dstnodeid="276" dstpinname="Aspect Width">
+   </LINK>
+   <LINK srcnodeid="275" srcpinname="Actual Backbuffer Height" dstnodeid="276" dstpinname="Aspect Height">
+   </LINK>
+   <NODE systemname="Field" filename="modules\skins\velcrome\Field.v4p" nodename="modules\skins\velcrome\Field.v4p" componentmode="Hidden" id="135">
    <BOUNDS type="Node" left="3087" top="6711" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3087" top="6711" width="3565" height="4690">
    </BOUNDS>
-   <BOUNDS type="Window" left="18060" top="2715" width="15075" height="9375">
+   <BOUNDS type="Window" left="3795" top="6870" width="6825" height="3645">
    </BOUNDS>
    <PIN pinname="Transform" visible="1">
    </PIN>
@@ -930,7 +986,7 @@
    </LINK>
    <LINK srcnodeid="135" srcpinname="Layer" dstnodeid="145" dstpinname="Layer 2">
    </LINK>
-   <NODE systemname="Ball" filename="modules\skins\Template\Ball.v4p" nodename="modules\skins\Template\Ball.v4p" componentmode="Hidden" id="269">
+   <NODE systemname="Ball" filename="modules\skins\velcrome\Ball.v4p" nodename="modules\skins\velcrome\Ball.v4p" componentmode="Hidden" id="269">
    <BOUNDS type="Node" left="5430" top="7650" width="975" height="270">
    </BOUNDS>
    <PIN pinname="Window Handle" visible="-1" pintype="Output">
@@ -941,6 +997,8 @@
    </PIN>
    <PIN pinname="Position" visible="1">
    </PIN>
+   <BOUNDS type="Window" left="5580" top="285" width="11730" height="10245">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="269" srcpinname="ID" dstnodeid="268" dstpinname="Node ID">
    </LINK>

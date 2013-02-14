@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.dtd" >
    <PATCH nodename="C:\vvvv\Foosball3000\modules\skins\velcrome\Field.v4p" systemname="Field" filename="C:\dev\vvvv\Laserkick3000\modules\skins\Template\Field.v4p">
-   <BOUNDS type="Window" left="18060" top="2715" width="15075" height="9375">
+   <BOUNDS type="Window" left="3795" top="6870" width="6825" height="3645">
    </BOUNDS>
    <NODE systemname="Constant (EX9.Effect)" nodename="Constant (EX9.Effect)" componentmode="Hidden" id="0" filename="%VVVV%\lib\nodes\effects\Constant.fx">
    <BOUNDS type="Node" left="1800" top="3090" width="100" height="100">
@@ -15,7 +15,7 @@
    </PIN>
    <PIN pinname="Color" slicecount="1" values="|0.00128,0.30248,0.68860,1.00000|">
    </PIN>
-   <PIN pinname="Texture" visible="1">
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="Fill (EX9.RenderState)" nodename="Fill (EX9.RenderState)" componentmode="Hidden" id="3">
